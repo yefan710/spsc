@@ -39,8 +39,8 @@ This package contains the reviewable artifacts for the AI 商品图优化 promot
 
 - `workflow/`
   - Capture playbook, skill chain notes, Jianying handoff, and business information flow image.
+  - `playwright_recording_spec.md` is the engineering contract for page-level recording, task modes, artifact naming, DOM asset capture, failure handling, and security rules.
 - `automation/playwright/`
   - Playwright backend capture script.
 - `automation/remotion_src/`
   - Relevant Remotion source files used for the clean master composition.
-

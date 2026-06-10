@@ -27,6 +27,7 @@ Local video outputs should stay in local run folders such as `07_final/` or in a
 - `workflow/`
   - `workflow_index.md` lists all workflow specifications in this package.
   - Capture playbook, skill chain notes, Jianying handoff, and business information flow image.
+  - `skill_dependencies.md` lists required/recommended/optional skills and runtime capabilities.
   - `asset_staging_and_evidence_spec.md` defines source image and DOM evidence contracts.
   - `remotion_clean_master_spec.md` defines the Remotion clean-master contract.
   - `playwright_recording_spec.md` is the engineering contract for page-level recording, task modes, artifact naming, DOM asset capture, failure handling, and security rules.

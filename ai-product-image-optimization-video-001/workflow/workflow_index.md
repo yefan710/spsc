@@ -10,6 +10,7 @@ The repository is for workflow specifications, scripts, verification frames, and
 | --- | --- | --- |
 | Business information flow | `v5_skill_chain_and_business_flow.md` | Explains how input assets, backend capture, Remotion, Jianying, and QA connect. |
 | Backend capture | `computer_use_backend_capture_playbook.md` | Defines the business operations for the AI 商品图优化 backend capture flow. |
+| Skill dependencies | `skill_dependencies.md` | Lists required/recommended/optional skills and runtime capabilities for each workflow stage. |
 | Playwright page recording | `playwright_recording_spec.md` | Defines browser context, modes, artifact naming, DOM capture, failure rules, and security. |
 | Asset staging and evidence | `asset_staging_and_evidence_spec.md` | Defines product image folders, DOM JSON, task status notes, and what is safe to commit. |
 | Remotion clean master | `remotion_clean_master_spec.md` | Defines composition structure, timing, image layout, animation ownership, and render checks. |
@@ -36,4 +37,3 @@ Do not commit by default:
 - `node_modules/`.
 
 If a future review needs video files, put them in a separate release artifact or a storage location designed for binary deliverables. Keep this repository as the reproducible workflow reference.
-

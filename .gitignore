@@ -1,0 +1,9 @@
+# Runtime and heavy video artifacts stay local by default.
+*.mp4
+*.webm
+*.mov
+*.mkv
+.playwright/
+node_modules/
+out/
+*.tmp.mp4

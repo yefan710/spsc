@@ -2,24 +2,11 @@
 
 This package contains the reviewable artifacts for the AI 商品图优化 promotion-video workflow.
 
-## Final Videos
+## Video Artifact Policy
 
-- `final_videos/童装三商品_25s_Remotion横版干净母版.mp4`
-  - 1920x1080
-  - 25s
-  - 30fps
-  - No audio track
-  - Designed as a clean Remotion master for later Jianying packaging.
-- `final_videos/沙拉碗_25s_Remotion横版干净母版.mp4`
-  - Earlier horizontal clean master kept for comparison.
+This repository stores workflow specs, automation references, verification frames, and lightweight evidence. It does not store final rendered videos or raw screen recordings by default.
 
-## Screen Recordings
-
-- `screen_recordings/playwright/`
-  - Playwright viewport recordings and related manual-helper page recordings.
-- `screen_recordings/manual_compressed/`
-  - Compressed 720p copies of the manual backend screen recordings.
-  - Original full-size local files were not committed because one original file exceeds GitHub's normal 100MiB file limit.
+Local video outputs should stay in local run folders such as `07_final/` or in a separate release artifact store.
 
 ## Evidence
 
@@ -38,7 +25,10 @@ This package contains the reviewable artifacts for the AI 商品图优化 promot
 ## Workflow And Automation
 
 - `workflow/`
+  - `workflow_index.md` lists all workflow specifications in this package.
   - Capture playbook, skill chain notes, Jianying handoff, and business information flow image.
+  - `asset_staging_and_evidence_spec.md` defines source image and DOM evidence contracts.
+  - `remotion_clean_master_spec.md` defines the Remotion clean-master contract.
   - `playwright_recording_spec.md` is the engineering contract for page-level recording, task modes, artifact naming, DOM asset capture, failure handling, and security rules.
   - `keyframe_acceptance_and_animation_spec.md` defines keyframe review points, pass/fail logic, animation contracts, and scoring before Jianying packaging.
 - `automation/playwright/`

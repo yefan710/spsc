@@ -1,0 +1,27 @@
+{
+  "name": "ai-product-image-optimization-v6-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "remotion preview src/index.ts",
+    "render": "remotion render src/index.ts ProductImageOptimizationVideo out/product-image-optimization.mp4",
+    "render:bars": "remotion render src/index.ts ProductImageOptimizationHorizontalBars out/product-image-optimization-horizontal-bars.mp4",
+    "render:workflow": "remotion render src/index.ts ProductImageOptimizationFullWorkflow out/product-image-optimization-full-workflow.mp4",
+    "render:clean-short": "remotion render src/index.ts ProductImageOptimizationCleanShort ../../07_final/沙拉碗_25s_Remotion干净母版.tmp.mp4 && ffmpeg -y -hide_banner -loglevel error -i ../../07_final/沙拉碗_25s_Remotion干净母版.tmp.mp4 -map 0:v:0 -c:v copy -an ../../07_final/沙拉碗_25s_Remotion干净母版.mp4 && rm ../../07_final/沙拉碗_25s_Remotion干净母版.tmp.mp4",
+    "render:horizontal-clean-short": "remotion render src/index.ts ProductImageOptimizationHorizontalCleanShort ../../07_final/沙拉碗_25s_Remotion横版干净母版.tmp.mp4 && ffmpeg -y -hide_banner -loglevel error -i ../../07_final/沙拉碗_25s_Remotion横版干净母版.tmp.mp4 -map 0:v:0 -c:v copy -an ../../07_final/沙拉碗_25s_Remotion横版干净母版.mp4 && rm ../../07_final/沙拉碗_25s_Remotion横版干净母版.tmp.mp4",
+    "render:horizontal-task4250": "remotion render src/index.ts ProductImageOptimizationHorizontalCleanShortTask4250 ../../07_final/童装三商品_25s_Remotion横版干净母版.tmp.mp4 && ffmpeg -y -hide_banner -loglevel error -i ../../07_final/童装三商品_25s_Remotion横版干净母版.tmp.mp4 -map 0:v:0 -c:v copy -an ../../07_final/童装三商品_25s_Remotion横版干净母版.mp4 && rm ../../07_final/童装三商品_25s_Remotion横版干净母版.tmp.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.471",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.471"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "typescript": "5.9.3"
+  }
+}
